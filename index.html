@@ -5,61 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Lovecats</title>
 
-<style>
-@font-face {
-    font-family: "Invite";
-    src: url("./Invite.otf");
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
+ <style>
+           @font-face {
+    font-family: 'Invite';
+    src: url("Invite.otf") format("opentype");
 }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url("Background3.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    body {
-        margin: 0;
-        min-height: 100vh;
-        background-image: url("Background2.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        h1 {
+            font-family: 'Invite', sans-serif;
+        }
+        
+        .pagina {
+            width: 90%;
+            max-width: 700px;
+            text-align: center;
+            padding: 40px 20px;
+        }
 
-    .pagina {
-        width: 90%;
-        max-width: 700px;
-        text-align: center;
-        padding: 40px 20px;
-    }
+        .imagem-principal {
+            width: min(60vw, 400px);
+            height: min(60vw, 400px);
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
 
-    .imagem-principal {
-        width: min(60vw, 400px);
-        height: min(60vw, 400px);
-        object-fit: cover;
-        display: block;
-        margin: 0 auto;
-        border-radius: 4px;
-    }
+       .texto {
+            margin-top: 30px;
+            color: white;
+            font-size: 22px;
+            line-height: 1.6;
+            font-weight: 200;
+            font-family: 'Invite', sans-serif;
+        }
 
-.texto {
-    margin-top: 30px;
-    color: white;
-    font-size: 22px;
-    line-height: 1.6;
-    font-weight: 200;
-    font-family: "Invite", sans-serif;
-}
-    audio {
-        display: none;
-    }
+        audio {
+            display: none;
+        }
 
-    .hidden {
-        display: none;
-        color: #accf15;
-    }
-</style>
+        .hidden {
+            display: none;
+            color: yellow;
+        }
+    </style>
 </head>
 
 <body>
